@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json
+
+services:
+
+  my-home-nginx:
+    # image: ianstorm/my-home-nginx:latest
+    build: .
+    environment:
+      - DNS_RESOLVER=
+      - MSH_MQTT_HOSTNAME=
+      - MSH_NODERED_HOSTNAME=
+      - MSH_Z2M_HOSTNAME=
+    ports:
+      - 80:80

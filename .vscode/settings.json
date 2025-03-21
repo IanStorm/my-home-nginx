@@ -6,8 +6,18 @@
 		120
 	],
 
+	"files.associations": {
+		"proxy_params": "NGINX",
+		"*.conf.template": "NGINX"
+	},
+
 
 	// ⬇️ Extension settings
+
+	"cSpell.words": [
+		"MQTT",
+		"Zigbee2MQTT"
+	]
 
 
 	// ⬇️ Misc.

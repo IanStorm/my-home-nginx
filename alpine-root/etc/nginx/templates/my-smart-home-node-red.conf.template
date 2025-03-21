@@ -1,0 +1,3 @@
+location /smart/ {
+	proxy_pass http://${MSH_NODERED_HOSTNAME}:1880/ui/;
+}

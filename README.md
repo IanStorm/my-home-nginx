@@ -6,3 +6,31 @@
 
 Garage project for **private purposes**.
 It provides a custom NGINX reverse proxy configuration for services in my home.
+
+
+## How to use in "production"? 👨‍💼 👩‍💼
+
+Use the setup provided in `docker-compose.yml`:
+1. Make sure to use `image: [...]` (instead of `build: .`).
+2. Make sure to properly set all variables in `environment:`.
+
+
+## How to develop? 👨‍💻 👩‍💻
+
+1. Clone this repository.
+2. Open the cloned folder in VSCode.
+2. Prepare `docker-compose.yml`:
+	1. Make sure to use `build: .` (instead of `image: [...]`).
+	2. Make sure to properly set all variables in `environment:`.
+2. Run `docker compose up --build`
+* To access the GUI open any browser and enter `http://127.0.0.1`
+
+
+## Appendix
+
+
+### Sources 📙
+
+* [NGINX docs: `ngx_http_proxy_module`](https://nginx.org/en/docs/http/ngx_http_proxy_module.html)
+* [NGINX docs: WebSocket proxying](https://nginx.org/en/docs/http/websocket.html)
+* [StackExchange: NGINX Docker built-in `envsubst`](https://serverfault.com/a/1115466)

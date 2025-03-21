@@ -1,0 +1,22 @@
+location /z2m/ {
+	proxy_pass http://${MSH_Z2M_HOSTNAME}:8099/;
+}
+
+# 🔗 https://nginx.org/en/docs/http/websocket.html
+location /z2m/api {
+	proxy_pass http://${MSH_Z2M_HOSTNAME}:8099/api;
+	proxy_set_header Upgrade $http_upgrade;
+	proxy_set_header Connection "upgrade";
+}
+
+
+location /zigbee2mqtt/ {
+	proxy_pass http://${MSH_Z2M_HOSTNAME}:8099/;
+}
+
+# 🔗 https://nginx.org/en/docs/http/websocket.html
+location /zigbee2mqtt/api {
+	proxy_pass http://${MSH_Z2M_HOSTNAME}:8099/api;
+	proxy_set_header Upgrade $http_upgrade;
+	proxy_set_header Connection "upgrade";
+}

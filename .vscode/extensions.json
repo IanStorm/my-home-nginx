@@ -1,6 +1,9 @@
 {
 	"recommendations": [
 		"EditorConfig.EditorConfig",
+		"redhat.vscode-yaml",
+		"shanoor.vscode-nginx",
+		"streetsidesoftware.code-spell-checker",
 		"wayou.vscode-todo-highlight"
 	]
 }

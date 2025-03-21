@@ -1,3 +1,10 @@
 FROM nginx:1.27.4-alpine
 
 EXPOSE 80
+
+ENV DNS_RESOLVER=
+ENV MSH_MQTT_HOSTNAME=
+ENV MSH_NODERED_HOSTNAME=
+ENV MSH_Z2M_HOSTNAME=
+
+COPY ./alpine-root/etc/nginx/ /etc/nginx/
