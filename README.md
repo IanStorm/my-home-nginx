@@ -33,4 +33,5 @@ Use the setup provided in `docker-compose.yml`:
 
 * [NGINX docs: `ngx_http_proxy_module`](https://nginx.org/en/docs/http/ngx_http_proxy_module.html)
 * [NGINX docs: WebSocket proxying](https://nginx.org/en/docs/http/websocket.html)
+* [NGINX docs: Configure logging](https://docs.nginx.com/nginx/admin-guide/monitoring/logging/)
 * [StackExchange: NGINX Docker built-in `envsubst`](https://serverfault.com/a/1115466)
