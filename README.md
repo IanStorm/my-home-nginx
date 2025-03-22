@@ -14,7 +14,7 @@ See how to put this repo in action at [IanStorm/my-smart-home-ras-pi](https://gi
 
 Use the setup provided in `docker-compose.yml`:
 1. Make sure to use `image: [...]` (instead of `build: .`).
-2. Make sure to properly set all variables in `environment:`.
+2. Make sure to properly set all variables in the `environment` section, if any.
 
 
 ## How to develop? 👨‍💻 👩‍💻
@@ -23,7 +23,7 @@ Use the setup provided in `docker-compose.yml`:
 2. Open the cloned folder in VSCode.
 2. Prepare `docker-compose.yml`:
 	1. Make sure to use `build: .` (instead of `image: [...]`).
-	2. Make sure to properly set all variables in `environment:`.
+	2. Make sure to properly set all variables in the `environment` section, if any.
 2. Run `docker compose up --build`
 * To access the GUI open any browser and enter `http://127.0.0.1`
 

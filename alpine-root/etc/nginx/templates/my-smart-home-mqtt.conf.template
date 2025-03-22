@@ -1,3 +1,0 @@
-location /mqtt/ {
-	proxy_pass http://${MSH_MQTT_HOSTNAME}:8083/;
-}
